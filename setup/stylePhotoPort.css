@@ -49,10 +49,26 @@ Variables
   --spacing: 0.1rem;
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /*--dark-shadow: 0 5px 15px rgb(44, 46, 48);*/
+  --dark-shadow: 0 5px 15px   #e5d0cc;
   --max-width: 1170px;
   --fixed-width: 620px;
+/* my colors*/ 
+--my--grey: hsl(210, 4%, 18%);
+--h2-colo3: hsl(210, 4%, 18%);
+--test: rgb(255, 0, 0);
+--nav-logo: rgb(89, 139, 197);
+
+/*my color palatte*/
+--min-black1-1: #172121;
+--min-grå-2: #444554;
+--min-grå-3: #7f7b82;
+--min-rosa-4: #bfacb5;
+--min-rosa-5: #e5d0cc;
+/*---------------------*/
 }
+
+
 /*
 =============== 
 Global Styles
@@ -68,8 +84,9 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-black);
-  color: var(--clr-grey-8);
+  background: var(--min-rosa-4);
+  /*dette er fargen på skriften tror jeg*/
+  color: var(--min-black1-1);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -157,8 +174,9 @@ Nav
 ===============
 */
 nav {
-  background: var(--clr-white);
-  height: 3rem;
+  /*background: var(--my--grey);*/
+  background: var(--min-rosa-5);
+  height: 4rem;
   display: grid;
   align-items: center;
   box-shadow: var(--dark-shadow);
@@ -173,6 +191,7 @@ nav {
 }
 .nav-center h4 {
   margin-bottom: 0;
+  /*vet ikke hvilken denne er for*/
   color: var(--clr-primary-5);
 }
 .nav-links {
@@ -182,7 +201,9 @@ nav a {
   text-transform: capitalize;
   font-weight: 700;
   font-size: 1rem;
-  color: var(--clr-primary-1);
+  /*color: var(--clr-primary-1);*/
+  /* denne bestemmer fargen til nav logo*/
+  color: var(--nav-logo);
   letter-spacing: var(--spacing);
   margin-right: 1rem;
 }
@@ -203,7 +224,8 @@ main {
   text-align: center;
 }
 .container h2 {
-  background: var(--clr-black);
+  /*background: var(--clr-black);*/
+  background: var(--min-grå-3);
   color: var(--clr-white);
   padding: 1rem;
   border-radius: var(--radius);
