@@ -54,6 +54,11 @@ body {
         margin-bottom: 10%;
         margin-top: 10%;
     }
+
+    .tekster{
+        margin-top: 6%;
+    }
+
 }
 
 
@@ -84,9 +89,6 @@ body {
     box-shadow: 0 0 0 white;
     transition: ease-in .5s;
 }
-
-
-
 
 .knapp a {
     color: #fff;
@@ -123,7 +125,7 @@ body {
 .knapp:hover a {
     color: var(--c);
 }
-
+    
 
 .tekster {
     margin-left: 2rem;
@@ -133,12 +135,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 600px) {
-    .tekster {
-        margin-left: 0rem;
-        margin-right: 0rem;
-    }
-}
+
 
 .mainTXT{
     font-weight: 100;
