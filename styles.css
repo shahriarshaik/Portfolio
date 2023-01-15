@@ -16,12 +16,6 @@ nav {
     box-shadow: 0px 0.3rem 0.6rem var(--a);
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .tittel {
     color: white;
     font-size: 1.4rem;
@@ -30,7 +24,6 @@ nav{
     font-weight: 700;
 }
 
-
 body {
     background-color: var(--c);
     margin: 0;
@@ -38,34 +31,48 @@ body {
     margin-top: 0;
 }
 
-
-@media screen and (min-width: 800px) {
-    .links {
-        display: block;
-    }
-    }
-
 .links {
     display: flex;
-    justify-content:space-evenly;
-    margin-left:  8rem;
-    margin-right: 8rem;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    margin-left:  7%;
+    margin-right: 7%;
 }
+
+@media screen and (max-width: 600px) {
+    .links {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .links div {
+        margin-bottom: 10%;
+    }
+
+    .knapp {
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+}
+
 
 /* container */
 .links div {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--c);
     height: 3rem; /* remove*/
     width: 100%;
 }
 
 .knapp {
     background: transparent;
-    height: 4rem;
-    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130%;
+    width: 69%;
     border-radius: 10px;
     border: 3px solid #fff;
     cursor: pointer;
@@ -78,11 +85,34 @@ body {
     transition: ease-in .5s;
 }
 
+
+
+
 .knapp a {
     color: #fff;
     text-decoration: none;
     transition: ease-in-out .5s;
+    margin: 2rem;
+    padding-top:    3%;
+    padding-bottom: 3%;
+    padding-left:   27%;
+    padding-right:  27%;
 }
+
+.links .git{
+    padding-top:    7%;
+    padding-bottom: 7%;
+    padding-left:   37%;
+    padding-right:  37%;
+}
+
+.links .linkedin{
+    padding-top:    7%;
+    padding-bottom: 7%;
+    padding-left:   33%;
+    padding-right:  33%;
+}
+
 
 .knapp:hover{
     box-shadow: 0 0 20px #fff;
@@ -103,18 +133,24 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@media screen and (max-width: 600px) {
+    .tekster {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
 .mainTXT{
     font-weight: 100;
     font-size: 1.1rem;
-    margin-left: 7rem;
-    margin-right: 8rem;
+    margin-left: 5%;
+    margin-right: 5%;
     line-height: 2rem;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 1%;
 }
 
 .introTXT {
-    margin-top: 4rem;
-    margin-left: 3rem;
+    margin-top: 2%;
     text-align: center;
 }
