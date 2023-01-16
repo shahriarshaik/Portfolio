@@ -1,5 +1,3 @@
-/*some colors */
-
 :root{
     --a: #1f2022;
     --b: #343541;
@@ -37,6 +35,7 @@ body {
     justify-content: space-evenly;
     margin-left:  7%;
     margin-right: 7%;
+    margin-bottom: 1vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -54,6 +53,11 @@ body {
         margin-bottom: 10%;
         margin-top: 10%;
     }
+
+    .tekster{
+        margin-top: 6%;
+    }
+
 }
 
 
@@ -64,6 +68,7 @@ body {
     justify-content: center;
     height: 3rem; /* remove*/
     width: 100%;
+    padding-bottom: 4vh;
 }
 
 .knapp {
@@ -84,9 +89,6 @@ body {
     box-shadow: 0 0 0 white;
     transition: ease-in .5s;
 }
-
-
-
 
 .knapp a {
     color: #fff;
@@ -123,7 +125,7 @@ body {
 .knapp:hover a {
     color: var(--c);
 }
-
+    
 
 .tekster {
     margin-left: 2rem;
@@ -131,13 +133,6 @@ body {
     margin-bottom: 4rem;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-@media screen and (max-width: 600px) {
-    .tekster {
-        margin-left: 0rem;
-        margin-right: 0rem;
-    }
 }
 
 .mainTXT{
@@ -154,3 +149,194 @@ body {
     margin-top: 2%;
     text-align: center;
 }
+
+.shadow {
+    margin: 0 auto;
+    margin-top: 7vh;
+    height: 100vh;
+    width: 90%;
+    border-radius: 38px;
+    background: #343541;
+    box-shadow: inset 50px 50px 69px #2f303b,
+                inset -50px -50px 69px #393a47;
+}
+
+.shadowtittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    height: 14vh;
+}
+
+.logos{
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 1fr 1fr 1fr 0.2fr;
+    align-items: center;
+    margin-top: 5vh;
+    grid-gap: 9vh;
+
+}
+
+.anoter {
+    height: 100vh;
+}
+
+.htmlLogo{
+    max-height: 15vh;
+    z-index: 1;
+    transition: ease-in .1s;
+}
+.htmlLogo:hover{
+    max-height: 25vh;
+    z-index: 1;
+}
+
+.cssLogo{
+    max-height: 16vh;
+    z-index: 1;
+    transition: ease-in .1s;
+}
+.cssLogo:hover{
+    max-height: 25vh;
+    z-index: 1;
+}
+
+.kotlin {
+    max-height: 14vh;
+    z-index: 1;
+    transition: ease-in .1s;
+}
+.kotlin:hover{
+    max-height: 19vh;
+    z-index: 1;
+}
+
+.javaLogo {
+    max-height: 17vh;
+    z-index: 1;
+    transition: ease-in .1s;
+}
+.javaLogo:hover {
+    max-height: 26vh;
+    z-index: 1;
+}
+
+.pyLogo {
+    max-height: 14vh;
+    z-index: 1;
+    transition: ease-in .1s;
+}
+.pyLogo:hover {
+    max-height: 19vh;
+    z-index: 1;
+}
+
+
+.JSlogo{
+    z-index: 1;
+    max-height: 21vh;
+    transition: ease-in .1s;
+}
+.JSlogo:hover{
+    z-index: 1;
+    max-height: 50vh;
+}
+
+
+.gitLogo{
+    z-index: 1;
+    max-height: 13vh;
+    transition: ease-in .1s;
+}
+.gitLogo:hover{
+    z-index: 1;
+    max-height: 20vh;
+}
+
+.npmLogo{
+    z-index: 1;
+    max-height: 6vh;
+    transition: ease-in .1s;
+}
+.npmLogo:hover{
+    z-index: 1;
+    max-height: 8vh;
+}
+
+
+.card {
+    /*
+    width: 190px;
+    height: 254px;
+    */
+    width: 23vh;
+    height: 30vh;
+    background: var(--a);
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    }
+
+.card h2 {
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+  }
+  
+.card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--b)), to(var(--c)));
+    background-image: linear-gradient(180deg, var(--b), var(--c));
+    height: 130%;
+    -webkit-animation: rotBGimg 10s linear infinite;
+            animation: rotBGimg 10s linear infinite;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+@-webkit-keyframes rotBGimg {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+  
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+  
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    background: var(--d);
+    ;
+    inset: 5px;
+    border-radius: 15px;
+  }  
+  .card:hover:before {
+    background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(197, 197, 197));
+    animation: rotBGimg 10s linear infinite;
+  }
+  
