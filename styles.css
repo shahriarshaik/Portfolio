@@ -189,12 +189,21 @@ main{
 }
 
 .logos{
+    /*
     display: grid;
     grid-template-columns: 0.6fr 1fr 1fr 1fr 1fr 0.2fr;
     align-items: center;
-    margin-top: 5vh;
     grid-gap: 9vh;
+    */
 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    margin-top: 3vh;
+    row-gap: 5vh;
+    column-gap: 6vh;
 }
 
 .anoter {
@@ -326,35 +335,32 @@ main{
       -webkit-transform: rotate(0deg);
               transform: rotate(0deg);
     }
-  
+
     to {
       -webkit-transform: rotate(360deg);
               transform: rotate(360deg);
     }
   }
-  
-  @keyframes rotBGimg {
+    @keyframes rotBGimg {
     from {
       -webkit-transform: rotate(0deg);
               transform: rotate(0deg);
     }
-  
     to {
       -webkit-transform: rotate(360deg);
               transform: rotate(360deg);
     }
-  }
-  
-  .card::after {
+    }
+    
+    .card::after {
     content: '';
     position: absolute;
     background: var(--d);
     ;
     inset: 5px;
     border-radius: 15px;
-  }  
-  .card:hover:before {
+    }  
+    .card:hover:before {
     background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(197, 197, 197));
     animation: rotBGimg 10s linear infinite;
-  }
-  
+    }
