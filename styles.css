@@ -109,6 +109,16 @@ main{
     transition: ease-in .5s;
 }
 
+.mellomrom{
+    margin-top: 5vh;
+    display: flex;
+}
+
+#clickable{
+    height: 5vh;
+    width: 15vh;
+}
+
 .knapp a {
     color: #fff;
     text-decoration: none;
