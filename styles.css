@@ -242,8 +242,8 @@ main{
     }
 }
 
-.anoter {
-    height: 100vh;
+.mellomrom {
+    height: 20vh;
 }
 
 .htmlLogo{
@@ -294,6 +294,8 @@ main{
 .pyLogo:hover {
     max-height: 19vh;
     z-index: 1;
+    -webkit-animation: rotBGimg 5s linear infinite;
+    animation: rotBGimg 5s linear infinite;
 }
 
 
@@ -326,6 +328,18 @@ main{
 .npmLogo:hover{
     z-index: 1;
     max-height: 8vh;
+}
+
+.reactlogo{
+    z-index: 1;
+    max-height: 10vh;
+    transition: ease-in .1s;
+}
+.reactlogo:hover{
+    z-index: 1;
+    max-height: 18vh;
+    -webkit-animation: rotBGimg 5s linear infinite;
+    animation: rotBGimg 5s linear infinite;
 }
 
 
