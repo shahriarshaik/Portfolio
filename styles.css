@@ -114,7 +114,7 @@ main{
     display: flex;
 }
 
-#clickable{
+#backbtn{
     height: 5vh;
     width: 15vh;
 }
@@ -308,7 +308,6 @@ main{
     animation: rotBGimg 5s linear infinite;
 }
 
-
 .JSlogo{
     z-index: 1;
     max-height: 21vh;
@@ -318,7 +317,6 @@ main{
     z-index: 1;
     max-height: 50vh;
 }
-
 
 .gitLogo{
     z-index: 1;
@@ -351,7 +349,6 @@ main{
     -webkit-animation: rotBGimg 5s linear infinite;
     animation: rotBGimg 5s linear infinite;
 }
-
 
 .card {
     /*
