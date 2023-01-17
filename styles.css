@@ -188,7 +188,6 @@ main{
     background: #343541;
     box-shadow: inset 50px 50px 69px #2f303b,
                 inset -50px -50px 69px #393a47;
-
 }
 
 .shadowtittle{
@@ -212,9 +211,34 @@ main{
     padding-right: 2vh;
 }
 
-@media screen and (max-width: 750px) {
+
+@media screen and (max-width: 900px) {
+    .shadowtittle h1{
+        font-size: 3.5vh;
+        max-width: 65vh;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .shadowtittle h1{
+        font-size: 2.9vh;
+        max-width: 50vh;
+    }
+}
+@media screen and (max-width: 500px) {
+
     .logos{
+        margin-top: 0vh;
         column-gap: 1vh;
+        padding-left:   1vh;
+        padding-right:  1vh;
+    }
+    .shadow{
+        padding-bottom: 3vh;
+    }
+    .shadowtittle h1{
+        font-size: 2.5vh;
+        max-width: 36vh;
     }
 }
 
