@@ -201,15 +201,6 @@ main{
 }
 
 .logos{
-
-    /*
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-between;
-    */
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -217,6 +208,14 @@ main{
     margin-top: 3vh;
     row-gap: 5vh;
     column-gap: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+@media screen and (max-width: 750px) {
+    .logos{
+        column-gap: 1vh;
+    }
 }
 
 .anoter {
