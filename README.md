@@ -1,4 +1,4 @@
-# JS-portfolio
+# Portfolio
 
 
 Nothing official, just some training
