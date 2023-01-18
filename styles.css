@@ -40,6 +40,9 @@ main{
     main{
         width: 100%;
     }
+    .shadow{
+        max-width: 110vh;
+    }
 }
 
 @media screen and (max-width: 600px) {
