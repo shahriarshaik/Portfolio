@@ -113,14 +113,22 @@ main{
 }
 
 .mellomrom{
-    margin-top: 5vh;
     display: flex;
+    height: 20vh;
+    margin-top: 5vh;
+    justify-content: space-between;
 }
 
 #backbtn{
     height: 5vh;
     width: 15vh;
 }
+
+#nextBTN{
+    height: 10vh;
+    width: 23vh;
+}
+
 
 .knapp a {
     color: #fff;
@@ -255,9 +263,6 @@ main{
     }
 }
 
-.mellomrom {
-    height: 20vh;
-}
 
 .htmlLogo{
     max-height: 15vh;
