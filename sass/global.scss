@@ -1,0 +1,32 @@
+
+$color-a: #1f2022;
+$color-b: #343541;
+$color-c: #444653;
+$color-d: #40414e;
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: $color-a;
+    margin-top: 0;
+    padding-top: 0.1rem;
+    box-shadow: 0px 0.3rem 0.6rem $color-a;
+}
+
+body {
+    background-color: $color-c;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+
