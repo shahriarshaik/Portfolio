@@ -7,7 +7,8 @@
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--a);
     margin-top: 0;
     padding-top: 0.1rem;
@@ -122,11 +123,13 @@ main{
 #backbtn{
     height: 5vh;
     width: 15vh;
+    margin-left: 3vh;
 }
 
 #nextBTN{
-    height: 10vh;
+    height: 6vh;
     width: 23vh;
+    margin-right: 3vh;
 }
 
 
