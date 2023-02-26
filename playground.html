@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/playground.css" />
     <link rel="stylesheet" href="css/btn.css"/>
+    <script src="JS/ButtonGenerator.js"></script> 
+    <script src="JS/gitPull.js"></script>
 </head>
 <body>
     <nav>
-        <button class="knapp">
+        <button class="knp">
             <a href="aboutMe.html" class="text">Back</a>
         </button>
         <h1 class="topTekst">
@@ -24,17 +26,13 @@
     <div id="button-container">
     </div>
 
-
-
-
-    <div id="gitPullTest">
-        <h3>Just testing to see if i am pulling stuff from git </h3>
-        <script src="JS/gitPull.js"></script>
-    </div>
     
-    <div id="noeAnnet">
-        <H1>Here will we get all the files loaded in automatically</H1> 
-        <script src="JS/ButtonGenerator.js"></script> 
+    <div class="loadedAmount">
+        <p id="explenation">
+            All of the butttons below are generated from a JS function. The HTML files are located in a folder in the same directory as the HTML file you are reading. Here i have made it so that whenever i create a new HTML file in the folder, a button will be generated for it. The button will have the same name as the HTML file i don't have to go back to this HTML page and link it manually. The JS file will automatically do it for me. How have i done it? By using GitHub's API. I use the API to find all the HTML files in the folder and then i use the API to get the content of the HTML files. I then use the names to link them to the acctual file in the JS function. I want all my projects to be automatically be loaded in, as if it was Youtube.
+        </p>
+    </div>
+    <div id="projectLinks">
     </div>
 
 </body>

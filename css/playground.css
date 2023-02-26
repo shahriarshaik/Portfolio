@@ -1,24 +1,108 @@
 body nav {
+  margin-bottom: 3vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3vh;
 }
 body nav h1 {
   color: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
 }
-body div.temp {
+body nav .tomrom {
+  margin-right: 3vh;
+}
+body div .temp {
   display: flex;
   justify-content: baseline;
   align-items: center;
   margin-left: 3vh;
 }
-body div.temp a {
+body div .temp a {
   text-decoration: none;
   color: white;
 }
-
-.tomrom{
+body #projectLinks {
+  display: flex;
+  justify-content: space-between;
   margin-right: 3vh;
 }
+body .loadedAmount {
+  margin-left: 3vh;
+  margin-right: 3vh;
+}
+
+.knp {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  width: 15vh;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 800;
+  font-size: 20;
+  box-shadow: 0 0 0 white;
+  transition: ease-in 0.5s;
+  margin-left: 3vh;
+}
+.knp a {
+  color: #fff;
+  text-decoration: none;
+  transition: ease-in-out 0.5s;
+  margin: 2rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 27%;
+  padding-right: 27%;
+}
+.knp:hover {
+  box-shadow: 0 0 20px #fff;
+  background-color: #fff;
+  inset: 200px 0 #fff;
+}
+.knp:hover a {
+  color: var(--c);
+}
+
+.knpAuto {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  width: auto;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 800;
+  font-size: 20;
+  box-shadow: 0 0 0 white;
+  transition: ease-in 0.5s;
+  margin-left: 3vh;
+}
+.knpAuto a {
+  color: #fff;
+  text-decoration: none;
+  transition: ease-in-out 0.5s;
+  margin: 2rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 27%;
+  padding-right: 27%;
+}
+.knpAuto:hover {
+  box-shadow: 0 0 20px #fff;
+  background-color: #fff;
+  inset: 200px 0 #fff;
+}
+.knpAuto:hover a {
+  color: var(--c);
+}/*# sourceMappingURL=playground.css.map */

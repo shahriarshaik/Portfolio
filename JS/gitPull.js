@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const fileInfoTest = document.getElementById('gitPullTest');
-    const fileInfo = document.getElementById('noeAnnet');
-
-
+    const fileInfo = document.getElementById('projectLinks');
+    const LoadedText = document.getElementsByClassName ('loadedAmount');
 
     // Specify the repository owner, repository name, and the path to the folder you want to read
     const owner = 'shahriarshaik';
@@ -18,6 +17,46 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Make an HTTP GET request to the GitHub API endpoint
 
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+        const files = data.filter(file => file.name.endsWith('.html'));
+
+        
+        const works = document.createElement('p');
+        works.textContent = `Loaded in ${files.length} files.`;
+        LoadedText.item(0).appendChild(works);
+
+        for (const file of files) {
+            //console.log(`File name: ${file.name}`);
+            const filnavn = document.createElement('button');
+            filnavn.textContent = `${file.name}`;
+            filnavn.classList.add('knpAuto');
+            filnavn.addEventListener('click', function() {
+                window.location.href = `/playgroundFiles/${file.name}`;
+            });
+            fileInfo.appendChild(filnavn);
+        }
+
+        })
+        .catch(error => {
+        console.error(`Error reading files: ${error}`);
+        });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
     fetch(apiUrlTest)
         .then(response => response.json())
         .then(data => {
@@ -42,38 +81,5 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => {
         console.error(`Error reading files: ${error}`);
         });
-
-
-        
-
-    fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-        const files = data.filter(file => file.name.endsWith('.html'));
-        //q: how do i make it only show html files?
-        //a: add a filter for file.name.endsWith('.html')
-
-        
-        const works = document.createElement('p');
-        works.textContent = `The repository has ${files.length} files.`;
-        fileInfo.appendChild(works);
-
-        for (const file of files) {
-            //console.log(`File name: ${file.name}`);
-            const filnavn = document.createElement('button');
-            filnavn.textContent = `${file.name}`;
-            filnavn.setAttribute('href', `${file.name}`);
-            filnavn.addEventListener('click', function() {
-                window.location.href = `/playgroundFiles/${file.name}`;
-            });
-            fileInfo.appendChild(filnavn);
-        }
-
-        })
-        .catch(error => {
-        console.error(`Error reading files: ${error}`);
-        });
-
-});
-
+        */
 
