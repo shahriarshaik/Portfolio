@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             filnavn.textContent = `${file.name}`;
             filnavn.classList.add('knpAuto');
             filnavn.addEventListener('click', function() {
-                window.location.href = `/playgroundFiles/${file.name}`;
+                window.location.href = `/Portfolio/playgroundFiles/${file.name}`;
             });
             fileInfo.appendChild(filnavn);
         }
