@@ -21,10 +21,16 @@ body div .temp a {
   text-decoration: none;
   color: white;
 }
+body .link-cont {
+  display: flex;
+  justify-content: center;
+}
 body #projectLinks {
   display: flex;
+  flex-wrap: wrap;
+  width: 90%;
   justify-content: space-between;
-  margin-right: 3vh;
+  margin-right: 0;
 }
 body .loadedAmount {
   margin-left: 3vh;
@@ -86,7 +92,6 @@ body .loadedAmount {
   font-size: 20;
   box-shadow: 0 0 0 white;
   transition: ease-in 0.5s;
-  margin-left: 3vh;
 }
 .knpAuto a {
   color: #fff;

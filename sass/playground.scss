@@ -26,10 +26,16 @@ body {
             }
         }
     }
+    .link-cont{
+        display: flex;
+        justify-content: center;
+    }
     #projectLinks{
         display: flex;
+        flex-wrap: wrap;
+        width: 90%;
         justify-content: space-between;
-        margin-right: 3vh;
+        margin-right: 0;
     }
     .loadedAmount{
         margin-left: 3vh;
@@ -92,7 +98,6 @@ body {
     font-size: 20;
     box-shadow: 0 0 0 white;
     transition: ease-in .5s;
-    margin-left: 3vh; 
     a {
         color: #fff;
         text-decoration: none;

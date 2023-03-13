@@ -38,7 +38,7 @@ main{
     margin: auto;
 }
 
-@media(max-width: 768px){
+@media(max-width: 900px){
     nav{
         display: flex;
         justify-content: space-around;
