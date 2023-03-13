@@ -62,7 +62,7 @@ a{
   background-color: #fff;
 }
 
-@media (max-width: 768px){
+@media (max-width: 900px){
 
   nav{
     position: fixed;
