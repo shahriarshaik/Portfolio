@@ -13,6 +13,7 @@ nav {
     margin-top: 0;
     padding-top: 0.1rem;
     box-shadow: 0px 0.3rem 0.6rem var(--a);
+    z-index: 99;
 }
 
 .tittel {
