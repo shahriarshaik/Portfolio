@@ -37,6 +37,20 @@ main{
     margin: auto;
 }
 
+@media(max-width: 768px){
+    nav{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #backbtn{
+        display: none;
+    }
+    #nextBTN{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1500px) {
     main{
         width: 100%;
